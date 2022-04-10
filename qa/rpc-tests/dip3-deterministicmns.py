@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2015-2018 The Veco Core developers
+# Copyright (c) 2015-2018 The Dash Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -604,7 +604,7 @@ class DIP3Test(BitcoinTestFramework):
                         raise AssertionError("winners did not match")
 
         if test_enforcement:
-            self.nodes[0].spork('SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT', 4070908800)
+            self.nodes[0].spork('SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT', 1540166400)
 
     def test_instantsend(self, tx_count, repeat, timeout=20):
         self.nodes[0].spork('SPORK_2_INSTANTSEND_ENABLED', 0)

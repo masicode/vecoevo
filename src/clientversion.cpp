@@ -45,8 +45,8 @@ const std::string CLIENT_NAME("Veco Core");
 //! git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#define GIT_COMMIT_ID "297c266e91043"
-#define GIT_COMMIT_DATE "Thu, 4 Apr 2019 10:33:03 +0200"
+#define GIT_COMMIT_ID "00f73b7f"
+#define GIT_COMMIT_DATE "Sat, 22 May 2021 23:59:38 +0100"
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj, min, rev, build, suffix) \

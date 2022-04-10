@@ -1,4 +1,5 @@
-// Copyright (c) 2014-2017 The Veco Core developers
+// Copyright (c) 2014-2017 The Dash Core developers
+// Copyright (c) 2018-2021 The Veco Core developers
 
 #include "governance.h"
 

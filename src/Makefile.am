@@ -1,5 +1,5 @@
 # Copyright (c) 2013-2016 The Bitcoin Core developers
-# Copyright (c) 2014-2018 The Veco Core developers
+# Copyright (c) 2014-2018 The Dash Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -323,6 +323,7 @@ libveco_wallet_a_SOURCES = \
 # crypto primitives library
 crypto_libveco_crypto_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_CONFIG_INCLUDES) $(PIC_FLAGS)
 crypto_libveco_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) $(PIC_FLAGS)
+crypto_libbitcoin_crypto_a_CFLAGS = $(AM_CFLAGS) $(PIE_FLAGS) -msse4.2 -fomit-frame-pointer
 crypto_libveco_crypto_a_SOURCES = \
   crypto/aes.cpp \
   crypto/aes.h \
@@ -339,7 +340,18 @@ crypto_libveco_crypto_a_SOURCES = \
   crypto/sha256.cpp \
   crypto/sha256.h \
   crypto/sha512.cpp \
-  crypto/sha512.h
+  crypto/sha512.h \
+  crypto/yespower/yespower.c
+
+noinst_HEADERS = \
+  crypto/yespower/yespower.h \
+  crypto/yespower/sha256.h \
+  crypto/yespower/sha256.c \
+  crypto/yespower/sysendian.h \
+  crypto/yespower/insecure_memzero.h \
+  crypto/yespower/yespower-platform.c \
+  crypto/yespower/yespower-opt.c \
+  crypto/yespower/yespower-ref.c
 
 # x11
 crypto_libveco_crypto_a_SOURCES += \

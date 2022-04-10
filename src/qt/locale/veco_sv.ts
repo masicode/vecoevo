@@ -2140,7 +2140,7 @@ https://www.transifex.com/projects/p/veco/</translation>
         <translation>Bitcoin Core-utvecklarna</translation>
     </message>
     <message>
-        <source>The Veco Core developers</source>
+        <source>The Dash Core developers</source>
         <translation>Veco Core-utvecklarna</translation>
     </message>
     <message>

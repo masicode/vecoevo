@@ -92,11 +92,11 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
     }
     
     /* Theme selector */
-    ui->theme->addItem(QString("VECO-light"), QVariant("light"));
-    ui->theme->addItem(QString("VECO-light-hires"), QVariant("light-hires"));
-    ui->theme->addItem(QString("VECO-light-retro"), QVariant("light-retro"));
-    ui->theme->addItem(QString("VECO-light-hires-retro"), QVariant("light-hires-retro"));
-    ui->theme->addItem(QString("VECO-blue"), QVariant("drkblue"));
+    //ui->theme->addItem(QString("VECO-light"), QVariant("light"));
+    //ui->theme->addItem(QString("VECO-light-hires"), QVariant("light-hires"));
+    //ui->theme->addItem(QString("VECO-light-retro"), QVariant("light-retro"));
+    //ui->theme->addItem(QString("VECO-light-hires-retro"), QVariant("light-hires-retro"));
+    //ui->theme->addItem(QString("VECO-blue"), QVariant("drkblue"));
     ui->theme->addItem(QString("VECO-Crownium"), QVariant("crownium"));
     ui->theme->addItem(QString("VECO-traditional"), QVariant("trad"));
     

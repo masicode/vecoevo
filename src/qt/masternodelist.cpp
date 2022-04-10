@@ -661,6 +661,19 @@ void MasternodeList::on_UpdateButton_clicked()
     updateMyNodeList(true);
 }
 
+void MasternodeList::on_reloadConfigButton_clicked()
+{
+	std::string strErr;
+	if (!masternodeConfig.read(strErr)) {
+		QMessageBox::StandardButton retval = QMessageBox::warning(this,
+			tr("Error reading masternode.conf file."),
+			tr(strErr.c_str()));
+	}
+	else {		
+		updateMyNodeList(true);
+	}
+}
+
 void MasternodeList::on_QRButton_clicked()
 {
     std::string strAlias;
